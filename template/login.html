@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Col Tenis | Login</title>
+
+</head>
+<body class="hold-transition login-page">
+  
+    <div class="card-body">
+      <p class="login-box-msg">Iniciar Sesión</p>
+      <form method="POST" class="user">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="text" class="form-control form-control-user" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control form-control-user" name="password" placeholder="Password">
+        </div>
+        <div class="col-md-12">
+          <button class="btn btn-primary" type="submit" style="width: 100%;">Iniciar Sesión</button>
+          <hr>
+          <a href="" class="btn btn-info" style="width: 100%;">Registrarse</a>
+        </div>
+      </form>
+
+</body>
+</html>
