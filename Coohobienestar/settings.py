@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'beneficiarios.apps.BeneficiariosConfig',
     'cuentas.apps.CuentasConfig',
     'departamento.apps.DepartamentoConfig',
+    'servicios.apps.ServiciosConfig',
 ]
 
 MIDDLEWARE = [
